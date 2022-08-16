@@ -1,6 +1,7 @@
 const express = require("express");
 
 const movimentacaoRoutes = require("../routes/movimentacaoRoutes");
+const categoriaRoutes = require("../routes/categoriaRoutes");
 
 module.exports = () => {
   const app = express();
@@ -15,6 +16,7 @@ module.exports = () => {
 
   //**Incluir Rotas**//
   movimentacaoRoutes(app);
+  categoriaRoutes(app);
 
   return app;
 };

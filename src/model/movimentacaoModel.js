@@ -6,6 +6,7 @@ class Movimentacoes {
     this.valor = movimentacoes.valor;
     this.data = movimentacoes.data;
     this.tipo = movimentacoes.tipo;
+    this.categoria_id = movimentacoes.categoria_id;
   }
 
   static listAll(tipo, result) {
